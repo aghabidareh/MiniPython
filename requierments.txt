@@ -1,0 +1,4 @@
+Package  Version
+-------- -------
+colorama 0.4.6
+pip      24.2
