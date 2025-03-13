@@ -3,7 +3,7 @@
 import numpy as np
 from colorama import Fore
 
-numbers = np.arange(1 , 100+1)
+numbers = np.arange(1, 100 + 1)
 s = np.sum(numbers)
 
 print(Fore.GREEN)
