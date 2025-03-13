@@ -1,6 +1,6 @@
 import numpy as np
 
-sequnce = np.array([1 , 2])
+sequnce = np.array([1, 2])
 
 s = 0
 
