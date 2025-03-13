@@ -15,6 +15,7 @@ def count_divisors(n):
         count *= 2
     return count
 
+
 def find_triangle_number_with_divisors(limit):
     n = 1
     while True:
@@ -23,6 +24,7 @@ def find_triangle_number_with_divisors(limit):
         if divisors > limit:
             return triangle_number
         n += 1
+
 
 limit = 500
 
