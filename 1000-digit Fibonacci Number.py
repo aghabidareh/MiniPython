@@ -9,5 +9,6 @@ def find_first_fibonacci_with_1000_digits():
         if len(str(b)) >= 1000:
             return index
 
+
 result = find_first_fibonacci_with_1000_digits()
 print(result)
