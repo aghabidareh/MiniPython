@@ -1,4 +1,3 @@
-
 heartBeatInEveryMinute = 72
 breathInEveryMinute = 30
 
