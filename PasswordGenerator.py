@@ -1,7 +1,8 @@
 from random import choice
-from string import punctuation , ascii_lowercase , ascii_uppercase , digits
+from string import punctuation, ascii_lowercase, ascii_uppercase, digits
 
-def generator(length=8 , usePunctiation=True , useLowerCaseWords=True,useUpperCaseWords=True,useDigits=True):
+
+def generator(length=8, usePunctiation=True, useLowerCaseWords=True, useUpperCaseWords=True, useDigits=True):
     string = ''
     if useLowerCaseWords:
         string += ascii_lowercase
@@ -19,5 +20,6 @@ def generator(length=8 , usePunctiation=True , useLowerCaseWords=True,useUpperCa
     password = ''.join(choice(string) for _ in range(length))
 
     return password
+
 
 print(generator())
