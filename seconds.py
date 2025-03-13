@@ -2,7 +2,7 @@ from colorama import Fore
 
 print(Fore.GREEN)
 
-second = 60 
+second = 60
 secondsInHour = 60 * 60
 secondsInDay = 24 * secondsInHour
 secondsInWeek = 7 * secondsInDay
