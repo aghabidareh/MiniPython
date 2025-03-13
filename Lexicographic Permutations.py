@@ -1,5 +1,6 @@
 import math
 
+
 def find_lexicographic_permutation(digits, target):
     permutation = []
     target -= 1
@@ -10,6 +11,7 @@ def find_lexicographic_permutation(digits, target):
         permutation.append(digits.pop(index))
         target %= factorial
     return ''.join(permutation)
+
 
 digits = [str(i) for i in range(10)]
 
