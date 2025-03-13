@@ -1,6 +1,7 @@
 # Initialize a cache to store sequence lengths
 cache = {}
 
+
 def collatz_sequence_length(n):
     if n in cache:
         return cache[n]
@@ -12,6 +13,7 @@ def collatz_sequence_length(n):
         length = 1 + collatz_sequence_length(3 * n + 1)
     cache[n] = length
     return length
+
 
 max_length = 0
 starting_number = 0
