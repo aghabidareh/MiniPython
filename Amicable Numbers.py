@@ -12,6 +12,7 @@ def sum_of_proper_divisors(n):
         i += 1
     return total
 
+
 def find_amicable_numbers(limit):
     amicable_numbers = set()
     for a in range(2, limit):
@@ -20,6 +21,7 @@ def find_amicable_numbers(limit):
             amicable_numbers.add(a)
             amicable_numbers.add(b)
     return sum(amicable_numbers)
+
 
 result = find_amicable_numbers(10000)
 print(result)
