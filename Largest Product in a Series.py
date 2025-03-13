@@ -23,7 +23,6 @@ number = (
 )
 
 
-# Function to calculate the product of digits in a string
 def product_of_digits(s):
     product = 1
     for digit in s:
@@ -31,11 +30,9 @@ def product_of_digits(s):
     return product
 
 
-# Initialize variables to track the maximum product and the corresponding digits
 max_product = 0
 max_digits = ""
 
-# Iterate through the number to find the maximum product of 13 adjacent digits
 for i in range(len(number) - 12):
     current_digits = number[i:i + 13]
     current_product = product_of_digits(current_digits)
