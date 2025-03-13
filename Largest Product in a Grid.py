@@ -22,6 +22,7 @@ grid = [
     [1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 1, 89, 19, 67, 48]
 ]
 
+
 def max_product(grid):
     max_prod = 0
     rows = len(grid)
@@ -47,5 +48,5 @@ def max_product(grid):
 
     return max_prod
 
+
 result = max_product(grid)
-print(f"The greatest product of four adjacent numbers is: {result}")
