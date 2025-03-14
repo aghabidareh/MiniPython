@@ -6,6 +6,7 @@ teens = ["ten", "eleven", "twelve", "thirteen", "fourteen",
 tens = ["twenty", "thirty", "forty", "fifty",
         "sixty", "seventy", "eighty", "ninety"]
 
+
 def number_to_letters(n):
     if n == 1000:
         return len("onethousand")
@@ -24,6 +25,7 @@ def number_to_letters(n):
         return len(teens[n - 10])
     else:
         return len(units[n - 1])
+
 
 total_letters = sum(number_to_letters(i) for i in range(1, 1001))
 
