@@ -11,5 +11,6 @@ def sum_of_fifth_powers():
 
     return total_sum
 
+
 result = sum_of_fifth_powers()
 print(f"The sum of all numbers that can be written as the sum of fifth powers of their digits is: {result}")
