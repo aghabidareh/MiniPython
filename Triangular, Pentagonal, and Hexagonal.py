@@ -2,6 +2,7 @@ def is_pentagonal(x):
     n = (1 + (1 + 24 * x) ** 0.5) / 6
     return n == int(n)
 
+
 def find_next_tri_pent_hex():
     n = 144
     while True:
@@ -9,6 +10,7 @@ def find_next_tri_pent_hex():
         if is_pentagonal(H_n):
             return H_n
         n += 1
+
 
 result = find_next_tri_pent_hex()
 
