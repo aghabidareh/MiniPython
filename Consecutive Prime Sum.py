@@ -1,5 +1,3 @@
-import sympy
-
 
 def sieve_of_eratosthenes(limit):
     # Generate all prime numbers below the limit using the Sieve of Eratosthenes
