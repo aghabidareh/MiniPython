@@ -1,5 +1,4 @@
 from math import gcd
-from functools import reduce
 
 
 def simplify_fraction(numerator, denominator):
