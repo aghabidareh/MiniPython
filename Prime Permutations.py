@@ -1,10 +1,13 @@
 import sympy
 
+
 def generate_4_digit_primes():
     return [p for p in range(1000, 10000) if sympy.isprime(p)]
 
+
 def is_permutation(a, b):
     return sorted(str(a)) == sorted(str(b))
+
 
 def find_arithmetic_sequence(primes):
     for i in range(len(primes)):
@@ -17,6 +20,7 @@ def find_arithmetic_sequence(primes):
                 if p1 != 1487:
                     return p1, p2, p3
     return None
+
 
 primes = generate_4_digit_primes()
 
