@@ -1,6 +1,7 @@
 def is_pandigital(s):
     return len(s) == 9 and set(s) == set("123456789")
 
+
 def find_largest_pandigital():
     largest_pandigital = 0
 
@@ -17,6 +18,7 @@ def find_largest_pandigital():
                 largest_pandigital = pandigital_number
 
     return largest_pandigital
+
 
 result = find_largest_pandigital()
 
