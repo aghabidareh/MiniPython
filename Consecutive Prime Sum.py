@@ -1,6 +1,5 @@
 
 def sieve_of_eratosthenes(limit):
-    # Generate all prime numbers below the limit using the Sieve of Eratosthenes
     sieve = [True] * (limit)
     sieve[0] = sieve[1] = False
     for p in range(2, int(limit ** 0.5) + 1):
