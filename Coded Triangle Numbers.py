@@ -1,7 +1,6 @@
 import requests
 
 def load_words():
-    # Load the words from the file
     url = "https://projecteuler.net/resources/documents/0042_words.txt"
     response = requests.get(url)
     words = response.text.replace('"', '').split(',')
