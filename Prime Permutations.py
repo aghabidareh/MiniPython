@@ -2,7 +2,6 @@ import itertools
 import sympy
 
 def generate_4_digit_primes():
-    # Generate all 4-digit prime numbers
     return [p for p in range(1000, 10000) if sympy.isprime(p)]
 
 def is_permutation(a, b):
