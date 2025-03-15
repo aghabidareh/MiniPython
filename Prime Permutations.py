@@ -1,4 +1,3 @@
-import itertools
 import sympy
 
 def generate_4_digit_primes():
