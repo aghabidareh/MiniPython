@@ -1,4 +1,3 @@
-
 def sieve_of_eratosthenes(limit):
     sieve = [True] * (limit)
     sieve[0] = sieve[1] = False
