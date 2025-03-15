@@ -1,7 +1,9 @@
 import math
 
+
 def sum_of_factorial_of_digits(n):
     return sum(math.factorial(int(digit)) for digit in str(n))
+
 
 def find_factorions():
     factorions = []
@@ -15,6 +17,7 @@ def find_factorions():
             factorions.append(num)
 
     return factorions
+
 
 factorions = find_factorions()
 
