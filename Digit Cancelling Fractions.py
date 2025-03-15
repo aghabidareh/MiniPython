@@ -1,9 +1,11 @@
 from math import gcd
 from functools import reduce
 
+
 def simplify_fraction(numerator, denominator):
     common_divisor = gcd(numerator, denominator)
     return numerator // common_divisor, denominator // common_divisor
+
 
 def find_curious_fractions():
     fractions = []
@@ -34,6 +36,7 @@ def find_curious_fractions():
 
     return fractions
 
+
 def compute_product(fractions):
     numerator = 1
     denominator = 1
@@ -43,6 +46,7 @@ def compute_product(fractions):
 
     simplified_numerator, simplified_denominator = simplify_fraction(numerator, denominator)
     return simplified_denominator
+
 
 curious_fractions = find_curious_fractions()
 
