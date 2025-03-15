@@ -1,5 +1,6 @@
 import math
 
+
 def is_prime(n):
     if n < 2:
         return False
@@ -8,8 +9,10 @@ def is_prime(n):
             return False
     return True
 
+
 def is_odd_composite(n):
     return n > 1 and n % 2 != 0 and not is_prime(n)
+
 
 def can_be_expressed(n, primes):
     for p in primes:
@@ -22,6 +25,7 @@ def can_be_expressed(n, primes):
                 return True
     return False
 
+
 def find_smallest_failing_odd_composite():
     primes = []
     n = 9
@@ -32,6 +36,7 @@ def find_smallest_failing_odd_composite():
             if not can_be_expressed(n, primes):
                 return n
         n += 2
+
 
 result = find_smallest_failing_odd_composite()
 
