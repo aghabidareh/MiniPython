@@ -1,13 +1,16 @@
 import requests
 
+
 def load_words():
     url = "https://projecteuler.net/resources/documents/0042_words.txt"
     response = requests.get(url)
     words = response.text.replace('"', '').split(',')
     return words
 
+
 def calculate_word_value(word):
     return sum(ord(char) - ord('A') + 1 for char in word)
+
 
 def generate_triangle_numbers(limit):
     triangle_numbers = set()
@@ -19,6 +22,7 @@ def generate_triangle_numbers(limit):
         triangle_numbers.add(t_n)
         n += 1
     return triangle_numbers
+
 
 def count_triangle_words(words):
     max_length = max(len(word) for word in words)
@@ -32,6 +36,7 @@ def count_triangle_words(words):
         if word_value in triangle_numbers:
             count += 1
     return count
+
 
 words = load_words()
 
