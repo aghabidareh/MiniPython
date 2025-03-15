@@ -1,6 +1,7 @@
 def is_pandigital(s):
     return len(s) == 9 and set(s) == set("123456789")
 
+
 def find_pandigital_products():
     products = set()
 
@@ -19,6 +20,7 @@ def find_pandigital_products():
                 products.add(product)
 
     return sum(products)
+
 
 result = find_pandigital_products()
 print(f"Sum of all unique pandigital products: {result}")
