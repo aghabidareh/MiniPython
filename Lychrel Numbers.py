@@ -1,5 +1,4 @@
 def is_palindrome(n):
-    # Check if a number is a palindrome
     return str(n) == str(n)[::-1]
 
 def reverse_and_add(n):
