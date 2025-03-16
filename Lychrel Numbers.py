@@ -15,7 +15,6 @@ def is_lychrel(n):
     return True
 
 def count_lychrel_numbers(limit):
-    # Count the number of Lychrel numbers below the limit
     count = 0
     for n in range(1, limit):
         if is_lychrel(n):
