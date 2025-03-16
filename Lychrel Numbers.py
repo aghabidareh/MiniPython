@@ -3,7 +3,6 @@ def is_palindrome(n):
     return str(n) == str(n)[::-1]
 
 def reverse_and_add(n):
-    # Reverse the number and add it to the original
     return n + int(str(n)[::-1])
 
 def is_lychrel(n):
