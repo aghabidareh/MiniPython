@@ -41,7 +41,6 @@ def find_smallest_prime_with_eight_prime_family(primes):
 limit = 1000000
 primes = sieve_of_eratosthenes(limit)
 
-# Find the smallest prime with an eight prime value family
 result = find_smallest_prime_with_eight_prime_family(primes)
 
 print(f"The smallest prime with an eight prime value family is: {result}")
