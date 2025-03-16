@@ -2,7 +2,6 @@ import sympy
 
 
 def is_prime(n):
-    # Check if n is a prime number
     return sympy.isprime(n)
 
 
