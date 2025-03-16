@@ -9,7 +9,6 @@ def count_fractions_with_more_digits_in_numerator():
         N_current = 2 * N_prev + N_prev_prev
         D_current = 2 * D_prev + D_prev_prev
 
-        # Check if the numerator has more digits than the denominator
         if len(str(N_current)) > len(str(D_current)):
             count += 1
 
