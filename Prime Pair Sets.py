@@ -26,7 +26,6 @@ def find_lowest_sum_set(primes):
 # Generate a list of primes up to a reasonable limit
 primes = generate_primes(10000)
 
-# Find the set of five primes with the lowest sum that satisfies the concatenation property
 combination, lowest_sum = find_lowest_sum_set(primes)
 
 if combination:
