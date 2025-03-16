@@ -7,7 +7,6 @@ def is_prime(n):
 
 
 def find_side_length():
-    # Initialize variables
     side_length = 1
     total_diagonals = 1
     prime_count = 0
