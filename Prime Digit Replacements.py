@@ -26,9 +26,7 @@ def find_smallest_prime_with_eight_prime_family(primes):
     for p in primes:
         s = str(p)
         length = len(s)
-        # Try replacing 1, 2, ..., up to length-1 digits
         for r in range(1, length):
-            # Generate all combinations of positions to replace
             for positions in itertools.combinations(range(length), r):
                 family = replace_digits(p, positions)
                 # Count the number of primes in the family
