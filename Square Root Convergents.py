@@ -20,7 +20,6 @@ def count_fractions_with_more_digits_in_numerator():
     return count
 
 
-# Count the number of fractions with more digits in the numerator
 result = count_fractions_with_more_digits_in_numerator()
 
 print(f"The number of fractions with more digits in the numerator is: {result}")
