@@ -22,7 +22,6 @@ def count_lychrel_numbers(limit):
             count += 1
     return count
 
-# Count the number of Lychrel numbers below ten thousand
 limit = 10000
 result = count_lychrel_numbers(limit)
 
