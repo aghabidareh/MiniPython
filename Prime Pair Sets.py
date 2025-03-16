@@ -23,7 +23,6 @@ def find_lowest_sum_set(primes):
             return combination, sum(combination)
     return None, None
 
-# Generate a list of primes up to a reasonable limit
 primes = generate_primes(10000)
 
 combination, lowest_sum = find_lowest_sum_set(primes)
