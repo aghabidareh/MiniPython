@@ -37,7 +37,6 @@ def find_smallest_prime_with_eight_prime_family(primes):
                     return p
     return None
 
-# Generate all primes below one million
 limit = 1000000
 primes = sieve_of_eratosthenes(limit)
 
