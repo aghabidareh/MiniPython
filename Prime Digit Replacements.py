@@ -12,7 +12,6 @@ def sieve_of_eratosthenes(limit):
     return [p for p, is_prime in enumerate(sieve) if is_prime]
 
 def replace_digits(n, positions):
-    # Replace digits at specified positions with the same digit (0-9)
     s = list(str(n))
     family = []
     for d in '0123456789':
