@@ -5,6 +5,7 @@ def are_permutations(x, multiples):
             return False
     return True
 
+
 def find_smallest_x():
     x = 1
     while True:
@@ -12,6 +13,7 @@ def find_smallest_x():
         if are_permutations(x, multiples):
             return x
         x += 1
+
 
 result = find_smallest_x()
 
