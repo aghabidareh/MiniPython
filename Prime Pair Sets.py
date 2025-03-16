@@ -6,7 +6,6 @@ def generate_primes(limit):
     return [p for p in range(2, limit) if sympy.isprime(p)]
 
 def is_concatenation_prime(p1, p2):
-    # Check if both concatenations of p1 and p2 are prime
     concat1 = int(f"{p1}{p2}")
     concat2 = int(f"{p2}{p1}")
     return sympy.isprime(concat1) and sympy.isprime(concat2)
