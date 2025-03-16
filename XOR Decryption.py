@@ -39,7 +39,6 @@ encrypted_codes = read_encrypted_codes(file_path)
 key, decrypted_codes = find_key_and_decrypt(encrypted_codes)
 
 if key:
-    # Calculate the sum of the ASCII values in the original text
     ascii_sum = calculate_ascii_sum(decrypted_codes)
     print(f"The key is: {''.join(map(chr, key))}")
     print(f"The decrypted message is: {''.join(map(chr, decrypted_codes))}")
