@@ -7,7 +7,6 @@ def reverse_and_add(n):
     return n + int(str(n)[::-1])
 
 def is_lychrel(n):
-    # Check if a number is a Lychrel number within 50 iterations
     for _ in range(50):
         n = reverse_and_add(n)
         if is_palindrome(n):
