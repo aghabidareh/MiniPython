@@ -1,5 +1,4 @@
 def count_fractions_with_more_digits_in_numerator():
-    # Initialize the first two terms
     N_prev_prev, D_prev_prev = 1, 1
     N_prev, D_prev = 3, 2
     count = 0
