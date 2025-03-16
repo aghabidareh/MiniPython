@@ -18,7 +18,7 @@ def replace_digits(n, positions):
     for d in '0123456789':
         for pos in positions:
             s[pos] = d
-        if s[0] != '0':  # Ensure the number does not start with 0
+        if s[0] != '0':
             family.append(int(''.join(s)))
     return family
 
