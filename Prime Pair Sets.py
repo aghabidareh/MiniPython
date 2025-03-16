@@ -12,7 +12,6 @@ def is_concatenation_prime(p1, p2):
     return sympy.isprime(concat1) and sympy.isprime(concat2)
 
 def find_lowest_sum_set(primes):
-    # Iterate through all combinations of five primes
     for combination in itertools.combinations(primes, 5):
         valid = True
         for pair in itertools.combinations(combination, 2):
