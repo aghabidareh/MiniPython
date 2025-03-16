@@ -5,7 +5,6 @@ def count_fractions_with_more_digits_in_numerator():
     count = 0
 
     for _ in range(2, 1001):
-        # Compute the next numerator and denominator
         N_current = 2 * N_prev + N_prev_prev
         D_current = 2 * D_prev + D_prev_prev
 
