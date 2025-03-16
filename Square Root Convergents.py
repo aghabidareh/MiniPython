@@ -13,7 +13,6 @@ def count_fractions_with_more_digits_in_numerator():
         if len(str(N_current)) > len(str(D_current)):
             count += 1
 
-        # Update the previous terms
         N_prev_prev, D_prev_prev = N_prev, D_prev
         N_prev, D_prev = N_current, D_current
 
