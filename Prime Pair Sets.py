@@ -2,7 +2,6 @@ import itertools
 import sympy
 
 def generate_primes(limit):
-    # Generate all prime numbers below the limit
     return [p for p in range(2, limit) if sympy.isprime(p)]
 
 def is_concatenation_prime(p1, p2):
