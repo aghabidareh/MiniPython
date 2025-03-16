@@ -1,14 +1,16 @@
 import itertools
 import sympy
 
+
 def sieve_of_eratosthenes(limit):
     sieve = [True] * (limit)
     sieve[0] = sieve[1] = False
-    for p in range(2, int(limit**0.5) + 1):
+    for p in range(2, int(limit ** 0.5) + 1):
         if sieve[p]:
-            for i in range(p*p, limit, p):
+            for i in range(p * p, limit, p):
                 sieve[i] = False
     return [p for p, is_prime in enumerate(sieve) if is_prime]
+
 
 def replace_digits(n, positions):
     s = list(str(n))
@@ -19,6 +21,7 @@ def replace_digits(n, positions):
         if s[0] != '0':
             family.append(int(''.join(s)))
     return family
+
 
 def find_smallest_prime_with_eight_prime_family(primes):
     for p in primes:
@@ -32,6 +35,7 @@ def find_smallest_prime_with_eight_prime_family(primes):
                 if prime_count >= 8:
                     return p
     return None
+
 
 limit = 1000000
 primes = sieve_of_eratosthenes(limit)
