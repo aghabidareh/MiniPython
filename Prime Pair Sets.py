@@ -1,13 +1,16 @@
 import itertools
 import sympy
 
+
 def generate_primes(limit):
     return [p for p in range(2, limit) if sympy.isprime(p)]
+
 
 def is_concatenation_prime(p1, p2):
     concat1 = int(f"{p1}{p2}")
     concat2 = int(f"{p2}{p1}")
     return sympy.isprime(concat1) and sympy.isprime(concat2)
+
 
 def find_lowest_sum_set(primes):
     for combination in itertools.combinations(primes, 5):
@@ -19,6 +22,7 @@ def find_lowest_sum_set(primes):
         if valid:
             return combination, sum(combination)
     return None, None
+
 
 primes = generate_primes(10000)
 
