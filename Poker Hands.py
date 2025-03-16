@@ -67,10 +67,8 @@ def count_player1_wins(file_url):
     return player1_wins
 
 
-# URL to the poker hands file
 file_url = "https://projecteuler.net/project/resources/p054_poker.txt"
 
-# Count the number of hands Player1 wins
 result = count_player1_wins(file_url)
 
 print(f"Player 1 wins {result} hands.")
