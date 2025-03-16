@@ -1,6 +1,7 @@
 def digital_sum(n):
     return sum(int(digit) for digit in str(n))
 
+
 def max_digital_sum():
     max_sum = 0
     for a in range(1, 100):
@@ -10,6 +11,7 @@ def max_digital_sum():
             if current_sum > max_sum:
                 max_sum = current_sum
     return max_sum
+
 
 result = max_digital_sum()
 
