@@ -35,7 +35,6 @@ def calculate_ascii_sum(decrypted_codes):
 file_path = '0059_cipher.txt'
 encrypted_codes = read_encrypted_codes(file_path)
 
-# Find the key and decrypt the message
 key, decrypted_codes = find_key_and_decrypt(encrypted_codes)
 
 if key:
