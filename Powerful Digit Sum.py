@@ -1,5 +1,4 @@
 def digital_sum(n):
-    # Calculate the sum of the digits of n
     return sum(int(digit) for digit in str(n))
 
 def max_digital_sum():
