@@ -15,7 +15,6 @@ def find_side_length():
 
     while True:
         side_length += 2
-        # Calculate the four corner numbers for the current layer
         for _ in range(4):
             current_number += side_length - 1
             if is_prime(current_number):
