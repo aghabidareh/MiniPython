@@ -1,4 +1,3 @@
-import math
 
 def binomial_coefficient(n, r):
     if r > n - r:
