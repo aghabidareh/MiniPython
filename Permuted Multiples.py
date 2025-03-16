@@ -1,5 +1,4 @@
 def are_permutations(x, multiples):
-    # Check if all multiples are permutations of x
     x_str = sorted(str(x))
     for multiple in multiples:
         if sorted(str(multiple)) != x_str:
