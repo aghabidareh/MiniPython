@@ -12,7 +12,6 @@ def max_digital_sum():
                 max_sum = current_sum
     return max_sum
 
-# Find the maximum digital sum
 result = max_digital_sum()
 
 print(f"The maximum digital sum is: {result}")
