@@ -26,7 +26,6 @@ def find_side_length():
             return side_length
 
 
-# Find the side length where the ratio of primes along the diagonals first falls below 10%
 result = find_side_length()
 
 print(f"The side length of the square spiral is: {result}")
