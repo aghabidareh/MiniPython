@@ -30,7 +30,6 @@ def generate_polygonal_numbers(sides, limit):
 
 
 def is_cyclic_set(numbers):
-    # Check if the set of numbers is cyclic
     for i in range(len(numbers)):
         if str(numbers[i])[2:] != str(numbers[(i + 1) % len(numbers)])[:2]:
             return False
