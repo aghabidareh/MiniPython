@@ -9,7 +9,6 @@ def compute_e_continued_fraction(n):
     return seq
 
 def compute_convergent(seq):
-    """Computes the numerator of the nth convergent from a continued fraction sequence."""
     num, denom = 1, 0  # Start from the last term
     for a in reversed(seq):
         num, denom = a * num + denom, num
