@@ -1,5 +1,4 @@
 from itertools import permutations
-from collections import defaultdict
 
 def is_cube(n, cubes_set):
     return n in cubes_set
