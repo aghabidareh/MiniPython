@@ -2,7 +2,6 @@ from itertools import permutations
 from collections import defaultdict
 
 def is_cube(n, cubes_set):
-    # Check if n is a cube
     return n in cubes_set
 
 def find_smallest_cube_with_five_permutations():
