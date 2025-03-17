@@ -55,7 +55,6 @@ def find_cyclic_set(polygonal_numbers):
     return None
 
 
-# Generate all 4-digit polygonal numbers
 polygonal_numbers = [
     generate_polygonal_numbers(3, 10000),  # Triangle
     generate_polygonal_numbers(4, 10000),  # Square
