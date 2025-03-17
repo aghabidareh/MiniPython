@@ -7,11 +7,13 @@ def compute_e_continued_fraction(n):
             seq.append(1)
     return seq
 
+
 def compute_convergent(seq):
     num, denom = 1, 0
     for a in reversed(seq):
         num, denom = a * num + denom, num
     return num
+
 
 e_sequence = compute_e_continued_fraction(100)
 
