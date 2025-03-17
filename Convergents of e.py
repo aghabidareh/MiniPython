@@ -19,7 +19,6 @@ e_sequence = compute_e_continued_fraction(100)
 # Compute the 100th convergent numerator
 numerator_100 = compute_convergent(e_sequence)
 
-# Sum of digits in the numerator
 sum_digits = sum(int(digit) for digit in str(numerator_100))
 
 print(sum_digits)
