@@ -38,7 +38,6 @@ def is_cyclic_set(numbers):
 
 
 def find_cyclic_set(polygonal_numbers):
-    # Find a cyclic set of six numbers, each from a different polygonal type
     for triangle in polygonal_numbers[0]:
         for square in polygonal_numbers[1]:
             if str(triangle)[2:] == str(square)[:2]:
