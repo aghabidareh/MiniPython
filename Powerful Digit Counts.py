@@ -13,7 +13,6 @@ def count_n_digit_nth_powers():
         n += 1
     return count
 
-# Count the number of n-digit positive integers which are also nth powers
 result = count_n_digit_nth_powers()
 
 print(f"The number of n-digit positive integers which are also nth powers is: {result}")
