@@ -8,7 +8,7 @@ def compute_e_continued_fraction(n):
     return seq
 
 def compute_convergent(seq):
-    num, denom = 1, 0  # Start from the last term
+    num, denom = 1, 0
     for a in reversed(seq):
         num, denom = a * num + denom, num
     return num
