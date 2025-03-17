@@ -65,7 +65,6 @@ polygonal_numbers = [
     generate_polygonal_numbers(8, 10000)  # Octagonal
 ]
 
-# Find the cyclic set of six numbers
 cyclic_set = find_cyclic_set(polygonal_numbers)
 
 if cyclic_set:
