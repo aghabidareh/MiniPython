@@ -1,5 +1,4 @@
 def compute_e_continued_fraction(n):
-    """Generates the first n terms of the continued fraction for e."""
     seq = [2]
     for k in range(1, n):
         if k % 3 == 2:
