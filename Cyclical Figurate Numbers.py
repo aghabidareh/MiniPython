@@ -1,4 +1,3 @@
-import itertools
 
 
 def generate_polygonal_numbers(sides, limit):
