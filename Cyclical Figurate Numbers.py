@@ -56,12 +56,12 @@ def find_cyclic_set(polygonal_numbers):
 
 
 polygonal_numbers = [
-    generate_polygonal_numbers(3, 10000),  # Triangle
-    generate_polygonal_numbers(4, 10000),  # Square
-    generate_polygonal_numbers(5, 10000),  # Pentagonal
-    generate_polygonal_numbers(6, 10000),  # Hexagonal
-    generate_polygonal_numbers(7, 10000),  # Heptagonal
-    generate_polygonal_numbers(8, 10000)  # Octagonal
+    generate_polygonal_numbers(3, 10000),
+    generate_polygonal_numbers(4, 10000),
+    generate_polygonal_numbers(5, 10000),
+    generate_polygonal_numbers(6, 10000),
+    generate_polygonal_numbers(7, 10000),
+    generate_polygonal_numbers(8, 10000)
 ]
 
 cyclic_set = find_cyclic_set(polygonal_numbers)
