@@ -13,7 +13,6 @@ def find_smallest_cube_with_five_permutations():
         cube = n ** 3
         cubes[n] = cube
         cubes_set.add(cube)
-        # Check permutations for the current cube
         cube_str = str(cube)
         cube_digits = sorted(cube_str)
         count = 0
