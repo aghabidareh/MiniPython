@@ -1,5 +1,3 @@
-
-
 def generate_polygonal_numbers(sides, limit):
     n = 1
     numbers = []
