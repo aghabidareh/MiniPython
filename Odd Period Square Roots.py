@@ -16,7 +16,7 @@ def continued_fraction_period(n):
         d = (n - m * m) // d
         a = (a0 + m) // d
         period += 1
-        if a == 2 * a0:  # Repeats when a_n = 2 * a_0
+        if a == 2 * a0:
             break
 
     return period
