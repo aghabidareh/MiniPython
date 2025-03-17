@@ -13,7 +13,6 @@ def compute_convergent(seq):
         num, denom = a * num + denom, num
     return num  # Numerator
 
-# Get the 100th continued fraction sequence for e
 e_sequence = compute_e_continued_fraction(100)
 
 numerator_100 = compute_convergent(e_sequence)
