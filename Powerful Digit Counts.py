@@ -1,5 +1,6 @@
 import math
 
+
 def count_n_digit_nth_powers():
     count = 0
     n = 1
@@ -12,6 +13,7 @@ def count_n_digit_nth_powers():
         count += (a_max - a_min + 1)
         n += 1
     return count
+
 
 result = count_n_digit_nth_powers()
 
