@@ -1,7 +1,9 @@
 from itertools import permutations
 
+
 def is_cube(n, cubes_set):
     return n in cubes_set
+
 
 def find_smallest_cube_with_five_permutations():
     cubes = {}
@@ -22,6 +24,7 @@ def find_smallest_cube_with_five_permutations():
         if count == 5:
             return cube
         n += 1
+
 
 result = find_smallest_cube_with_five_permutations()
 
