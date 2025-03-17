@@ -11,7 +11,7 @@ def compute_convergent(seq):
     num, denom = 1, 0  # Start from the last term
     for a in reversed(seq):
         num, denom = a * num + denom, num
-    return num  # Numerator
+    return num
 
 e_sequence = compute_e_continued_fraction(100)
 
