@@ -69,7 +69,6 @@ polygonal_numbers = [
 cyclic_set = find_cyclic_set(polygonal_numbers)
 
 if cyclic_set:
-    # Calculate the sum of the numbers in the set
     sum_cyclic_set = sum(cyclic_set)
     print(f"The cyclic set of six numbers is: {cyclic_set}")
     print(f"The sum of the numbers is: {sum_cyclic_set}")
