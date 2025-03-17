@@ -26,7 +26,6 @@ def find_smallest_cube_with_five_permutations():
             return cube
         n += 1
 
-# Find the smallest cube with exactly five permutations that are also cubes
 result = find_smallest_cube_with_five_permutations()
 
 print(f"The smallest cube with exactly five permutations that are also cubes is: {result}")
