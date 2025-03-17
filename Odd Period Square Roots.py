@@ -22,6 +22,5 @@ def continued_fraction_period(n):
     return period
 
 
-# Count numbers with odd period
 count = sum(1 for n in range(2, 10001) if continued_fraction_period(n) % 2 == 1)
 print(count)
