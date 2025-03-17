@@ -2,7 +2,6 @@ import math
 
 
 def continued_fraction_period(n):
-    """Computes the period of the continued fraction representation of sqrt(n)."""
     sqrt_n = math.isqrt(n)
     if sqrt_n * sqrt_n == n:
         return 0
