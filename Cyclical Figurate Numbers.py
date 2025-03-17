@@ -2,7 +2,6 @@ import itertools
 
 
 def generate_polygonal_numbers(sides, limit):
-    # Generate all 4-digit numbers for a given polygonal type
     n = 1
     numbers = []
     while True:
