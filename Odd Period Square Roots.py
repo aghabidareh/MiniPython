@@ -5,7 +5,7 @@ def continued_fraction_period(n):
     """Computes the period of the continued fraction representation of sqrt(n)."""
     sqrt_n = math.isqrt(n)
     if sqrt_n * sqrt_n == n:
-        return 0  # Perfect squares have no period
+        return 0
 
     m, d, a0 = 0, 1, sqrt_n
     a = a0
