@@ -31,7 +31,6 @@ def find_max_16_digit_string():
                 max_string = current_string
     return max_string
 
-# Find the maximum 16-digit string for a magic 5-gon ring
 result = find_max_16_digit_string()
 
 print(f"The maximum 16-digit string for a magic 5-gon ring is: {result}")
