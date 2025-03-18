@@ -9,7 +9,6 @@ def find_optimal_n(limit):
         n *= p
     return n
 
-# Find the value of n <= 1,000,000 for which n / phi(n) is maximized
 limit = 1000000
 result = find_optimal_n(limit)
 
