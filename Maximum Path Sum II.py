@@ -3,11 +3,13 @@ def read_triangle(file_path):
         triangle = [[int(num) for num in line.split()] for line in file]
     return triangle
 
+
 def max_total(triangle):
     for i in range(len(triangle) - 2, -1, -1):
         for j in range(len(triangle[i])):
             triangle[i][j] += max(triangle[i + 1][j], triangle[i + 1][j + 1])
     return triangle[0][0]
+
 
 file_path = '0067_triangle.txt'
 triangle = read_triangle(file_path)
