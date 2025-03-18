@@ -1,4 +1,3 @@
-import math
 
 def compute_totients(limit):
     phi = list(range(limit + 1))
