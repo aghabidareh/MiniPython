@@ -14,7 +14,6 @@ def max_total(triangle):
 file_path = '0067_triangle.txt'
 triangle = read_triangle(file_path)
 
-# Find the maximum total from top to bottom
 result = max_total(triangle)
 
 print(f"The maximum total from top to bottom is: {result}")
