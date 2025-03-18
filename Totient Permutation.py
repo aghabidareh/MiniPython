@@ -1,7 +1,6 @@
 import math
 
 def compute_totients(limit):
-    # Initialize a list to store the totient values
     phi = list(range(limit + 1))
     for p in range(2, limit + 1):
         if phi[p] == p:  # p is prime
@@ -10,7 +9,6 @@ def compute_totients(limit):
     return phi
 
 def is_permutation(a, b):
-    # Check if a and b are permutations of each other
     return sorted(str(a)) == sorted(str(b))
 
 def find_min_ratio_n(limit):
