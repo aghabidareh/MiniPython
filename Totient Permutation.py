@@ -1,4 +1,3 @@
-
 def compute_totients(limit):
     phi = list(range(limit + 1))
     for p in range(2, limit + 1):
@@ -7,8 +6,10 @@ def compute_totients(limit):
                 phi[multiple] -= phi[multiple] // p
     return phi
 
+
 def is_permutation(a, b):
     return sorted(str(a)) == sorted(str(b))
+
 
 def find_min_ratio_n(limit):
     phi = compute_totients(limit)
@@ -22,7 +23,8 @@ def find_min_ratio_n(limit):
                 result_n = n
     return result_n
 
-limit = 10**7
+
+limit = 10 ** 7
 result = find_min_ratio_n(limit)
 
 print(f"The value of n < 10^7 for which phi(n) is a permutation of n and n/phi(n) is minimized is: {result}")
