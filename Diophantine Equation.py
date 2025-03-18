@@ -6,7 +6,6 @@ def is_square(n):
     return int(math.isqrt(n)) ** 2 == n
 
 def find_minimal_solution(D):
-    # Find the minimal solution (x, y) to x^2 - D y^2 = 1
     if is_square(D):
         return None
     sqrt_D = sqrt(D)
