@@ -10,7 +10,6 @@ def max_total(triangle):
             triangle[i][j] += max(triangle[i + 1][j], triangle[i + 1][j + 1])
     return triangle[0][0]
 
-# Read the triangle from the file
 file_path = '0067_triangle.txt'
 triangle = read_triangle(file_path)
 
