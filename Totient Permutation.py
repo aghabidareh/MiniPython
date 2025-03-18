@@ -23,7 +23,6 @@ def find_min_ratio_n(limit):
                 result_n = n
     return result_n
 
-# Find the value of n < 10^7 for which phi(n) is a permutation of n and n/phi(n) is minimized
 limit = 10**7
 result = find_min_ratio_n(limit)
 
