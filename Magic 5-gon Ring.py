@@ -1,7 +1,6 @@
 import itertools
 
 def is_magic_5gon(external, internal):
-    # Check if the 5-gon ring is magic
     total = external[0] + internal[0] + internal[1]
     for i in range(1, 5):
         if external[i] + internal[i] + internal[(i + 1) % 5] != total:
@@ -9,7 +8,6 @@ def is_magic_5gon(external, internal):
     return True
 
 def form_16_digit_string(external, internal):
-    # Form the 16-digit string starting from the smallest external node
     start_index = external.index(min(external))
     result = []
     for i in range(5):
