@@ -1,8 +1,10 @@
 import math
 from sympy import sqrt, continued_fraction, continued_fraction_convergents
 
+
 def is_square(n):
     return int(math.isqrt(n)) ** 2 == n
+
 
 def find_minimal_solution(D):
     if is_square(D):
@@ -15,6 +17,7 @@ def find_minimal_solution(D):
         if x * x - D * y * y == 1:
             return x, y
     return None
+
 
 def find_max_x_D(limit):
     max_x = 0
@@ -29,6 +32,7 @@ def find_max_x_D(limit):
                 max_x = x
                 best_D = D
     return best_D
+
 
 limit = 1000
 result = find_max_x_D(limit)
