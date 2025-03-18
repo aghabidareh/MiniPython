@@ -32,7 +32,6 @@ def find_max_x_D(limit):
                 best_D = D
     return best_D
 
-# Find the value of D <= 1000 with the largest minimal x
 limit = 1000
 result = find_max_x_D(limit)
 
