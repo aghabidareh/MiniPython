@@ -2,7 +2,6 @@ import math
 from sympy import sqrt, Rational, continued_fraction, continued_fraction_convergents
 
 def is_square(n):
-    # Check if n is a perfect square
     return int(math.isqrt(n)) ** 2 == n
 
 def find_minimal_solution(D):
