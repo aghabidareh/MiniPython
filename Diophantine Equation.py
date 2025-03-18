@@ -1,5 +1,5 @@
 import math
-from sympy import sqrt, Rational, continued_fraction, continued_fraction_convergents
+from sympy import sqrt, continued_fraction, continued_fraction_convergents
 
 def is_square(n):
     return int(math.isqrt(n)) ** 2 == n
