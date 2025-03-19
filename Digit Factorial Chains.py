@@ -4,11 +4,9 @@ import math
 factorials = [math.factorial(i) for i in range(10)]
 
 def sum_factorial_digits(n):
-    # Sum the factorials of the digits of n
     return sum(factorials[int(d)] for d in str(n))
 
 def chain_length(n, memo):
-    # Calculate the length of the chain starting with n
     if n in memo:
         return memo[n]
     seen = {}
@@ -18,7 +16,6 @@ def chain_length(n, memo):
         seen[current] = length
         current = sum_factorial_digits(current)
         length += 1
-    # The length of the non-repeating part is the length of the chain
     memo[n] = length
     return length
 
