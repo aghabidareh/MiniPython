@@ -1,6 +1,5 @@
 import math
 
-# Precompute factorials for digits 0-9
 factorials = [math.factorial(i) for i in range(10)]
 
 def sum_factorial_digits(n):
