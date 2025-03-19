@@ -5,7 +5,6 @@ from collections import defaultdict
 def count_unique_perimeters(limit):
     perimeter_counts = defaultdict(int)
 
-    # Generate all primitive Pythagorean triples
     for m in range(2, int(math.sqrt(limit / 2)) + 1):
         for n in range(1, m):
             if (m + n) % 2 == 1 and math.gcd(m, n) == 1:
@@ -15,13 +14,11 @@ def count_unique_perimeters(limit):
                 perimeter = a + b + c
                 if perimeter > limit:
                     continue
-                # Generate all multiples of the primitive triple
                 k = 1
                 while k * perimeter <= limit:
                     perimeter_counts[k * perimeter] += 1
                     k += 1
 
-    # Count the number of L with exactly one Pythagorean triple
     count = 0
     for L in perimeter_counts:
         if perimeter_counts[L] == 1:
