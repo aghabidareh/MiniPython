@@ -1,5 +1,4 @@
 def compute_totients(limit):
-    # Initialize a list to store the totient values
     phi = list(range(limit + 1))
     for p in range(2, limit + 1):
         if phi[p] == p:  # p is prime
@@ -9,7 +8,6 @@ def compute_totients(limit):
 
 def count_reduced_proper_fractions(limit):
     phi = compute_totients(limit)
-    # Sum phi(d) for d from 2 to limit
     return sum(phi[2:limit + 1])
 
 limit = 1000000
