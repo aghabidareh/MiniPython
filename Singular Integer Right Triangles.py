@@ -29,7 +29,6 @@ def count_unique_perimeters(limit):
     return count
 
 
-# Count the number of L <= 1,500,000 with exactly one Pythagorean triple
 limit = 1500000
 result = count_unique_perimeters(limit)
 
