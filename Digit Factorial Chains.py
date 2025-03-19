@@ -30,7 +30,6 @@ def count_chains_with_60_terms(limit):
             count += 1
     return count
 
-# Count the number of chains with exactly 60 non-repeating terms for starting numbers below one million
 limit = 1000000
 result = count_chains_with_60_terms(limit)
 
