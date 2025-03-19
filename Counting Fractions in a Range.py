@@ -1,5 +1,6 @@
 import math
 
+
 def count_fractions_between_one_third_and_one_half(limit):
     count = 0
     for d in range(2, limit + 1):
@@ -9,6 +10,7 @@ def count_fractions_between_one_third_and_one_half(limit):
             if math.gcd(n, d) == 1:
                 count += 1
     return count
+
 
 limit = 12000
 result = count_fractions_between_one_third_and_one_half(limit)
