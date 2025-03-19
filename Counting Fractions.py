@@ -12,7 +12,6 @@ def count_reduced_proper_fractions(limit):
     # Sum phi(d) for d from 2 to limit
     return sum(phi[2:limit + 1])
 
-# Count the number of reduced proper fractions for d <= 1,000,000
 limit = 1000000
 result = count_reduced_proper_fractions(limit)
 
