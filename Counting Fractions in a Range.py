@@ -10,7 +10,6 @@ def count_fractions_between_one_third_and_one_half(limit):
                 count += 1
     return count
 
-# Count the number of fractions between 1/3 and 1/2 for d <= 12,000
 limit = 12000
 result = count_fractions_between_one_third_and_one_half(limit)
 
