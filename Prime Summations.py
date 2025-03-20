@@ -20,8 +20,7 @@ def count_prime_sums(limit, target):
             return i
     return -1
 
-# Find the first value which can be written as the sum of primes in over 5,000 different ways
-limit = 100000  # Adjust the limit if necessary
+limit = 100000
 target = 5000
 result = count_prime_sums(limit, target)
 
