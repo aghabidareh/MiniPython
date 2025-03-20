@@ -6,6 +6,7 @@ def count_partitions(n):
             dp[j] += dp[j - i]
     return dp[n] - 1
 
+
 n = 100
 result = count_partitions(n)
 
