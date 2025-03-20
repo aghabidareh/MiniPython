@@ -7,7 +7,7 @@ def is_perfect_square(n):
 def sum_first_hundred_digits(n):
     getcontext().prec = 105  # Set precision to ensure 100 decimal digits
     sqrt_n = Decimal(n).sqrt()
-    sqrt_str = str(sqrt_n).replace('.', '')  # Remove the decimal point
+    sqrt_str = str(sqrt_n).replace('.', '')
     return sum(int(digit) for digit in sqrt_str[:100])
 
 def total_digital_sums(limit):
