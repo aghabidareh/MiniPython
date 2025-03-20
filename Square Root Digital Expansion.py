@@ -5,7 +5,7 @@ def is_perfect_square(n):
     return int(math.isqrt(n)) ** 2 == n
 
 def sum_first_hundred_digits(n):
-    getcontext().prec = 105  # Set precision to ensure 100 decimal digits
+    getcontext().prec = 105
     sqrt_n = Decimal(n).sqrt()
     sqrt_str = str(sqrt_n).replace('.', '')
     return sum(int(digit) for digit in sqrt_str[:100])
