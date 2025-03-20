@@ -1,6 +1,6 @@
 def find_least_n_divisible_by_one_million():
     target = 1000000
-    p = [0] * (10**6)
+    p = [0] * (10 ** 6)
     p[0] = 1
     n = 1
     while True:
@@ -17,6 +17,7 @@ def find_least_n_divisible_by_one_million():
         if p[n] == 0:
             return n
         n += 1
+
 
 result = find_least_n_divisible_by_one_million()
 
