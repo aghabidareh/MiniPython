@@ -19,7 +19,6 @@ def find_least_n_divisible_by_one_million():
             return n
         n += 1
 
-# Find the least value of n for which p(n) is divisible by one million
 result = find_least_n_divisible_by_one_million()
 
 print(f"The least value of n for which p(n) is divisible by one million is: {result}")
