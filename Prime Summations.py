@@ -1,12 +1,13 @@
 def sieve_of_eratosthenes(limit):
     sieve = [True] * (limit + 1)
     sieve[0] = sieve[1] = False
-    for p in range(2, int(limit**0.5) + 1):
+    for p in range(2, int(limit ** 0.5) + 1):
         if sieve[p]:
-            for i in range(p*p, limit + 1, p):
+            for i in range(p * p, limit + 1, p):
                 sieve[i] = False
     primes = [p for p, is_prime in enumerate(sieve) if is_prime]
     return primes
+
 
 def count_prime_sums(limit, target):
     primes = sieve_of_eratosthenes(limit)
@@ -19,6 +20,7 @@ def count_prime_sums(limit, target):
         if dp[i] > target:
             return i
     return -1
+
 
 limit = 100000
 target = 5000
