@@ -17,7 +17,6 @@ def total_digital_sums(limit):
             total += sum_first_hundred_digits(n)
     return total
 
-# Calculate the total of the digital sums of the first one hundred decimal digits for all irrational square roots from 1 to 100
 limit = 100
 result = total_digital_sums(limit)
 
