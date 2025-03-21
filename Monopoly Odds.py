@@ -27,7 +27,6 @@ position = 0
 visits = [0] * 40
 visits[0] = 1
 
-# Simulate the game
 num_simulations = 1000000
 for _ in range(num_simulations):
     dice1 = random.randint(1, 4)
