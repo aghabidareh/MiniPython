@@ -83,7 +83,6 @@ for _ in range(num_simulations):
     # Increment the visit count for the current square
     visits[position] += 1
 
-# Calculate the probabilities
 probabilities = [visits[i] / num_simulations for i in range(40)]
 
 sorted_indices = sorted(range(40), key=lambda i: -probabilities[i])
