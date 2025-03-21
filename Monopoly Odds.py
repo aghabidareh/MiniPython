@@ -14,11 +14,9 @@ ch_squares = [7, 22, 36]
 g2j = 30
 jail = 10
 
-# Define the CC and CH cards
 cc_cards = ["GO", "JAIL"] + [None] * 14
 ch_cards = ["GO", "JAIL", "C1", "E3", "H2", "R1", "next R", "next R", "next U", "back 3"] + [None] * 6
 
-# Shuffle the CC and CH cards
 random.shuffle(cc_cards)
 random.shuffle(ch_cards)
 
