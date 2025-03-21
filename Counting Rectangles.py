@@ -6,7 +6,7 @@ best_m, best_n = 0, 0
 
 # Iterate over possible values of m (up to a reasonable limit)
 for m in range(1, 100):
-    rect_m = (m * (m + 1)) // 2  # Sum of first m natural numbers
+    rect_m = (m * (m + 1)) // 2
 
     n_estimate = int(((8 * target / rect_m + 1) ** 0.5 - 1) / 2)
 
