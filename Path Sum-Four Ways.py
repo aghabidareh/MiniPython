@@ -40,11 +40,9 @@ def minimal_path_sum(matrix):
     return dist[rows - 1][cols - 1]
 
 
-# Read the matrix from the file
 file_path = '0083_matrix.txt'
 matrix = read_matrix(file_path)
 
-# Find the minimal path sum
 result = minimal_path_sum(matrix)
 
 print(f"The minimal path sum is: {result}")
