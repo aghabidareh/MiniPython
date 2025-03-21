@@ -1,6 +1,5 @@
 import random
 
-# Define the board squares
 squares = [
     "GO", "A1", "CC1", "A2", "T1", "R1", "B1", "CH1", "B2", "B3",
     "JAIL", "C1", "U1", "C2", "C3", "R2", "D1", "CC2", "D2", "D3",
@@ -8,7 +7,6 @@ squares = [
     "G2J", "G1", "G2", "CC3", "G3", "R4", "CH3", "H1", "T2", "H2"
 ]
 
-# Define the indices of special squares
 cc_squares = [2, 17, 33]
 ch_squares = [7, 22, 36]
 g2j = 30
