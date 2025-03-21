@@ -28,7 +28,6 @@ def minimal_path_sum(matrix):
                 min_sum = min(min_sum, dp[i + 1][j])
             # Update the temporary column
             temp[i] = matrix[i][j] + min_sum
-        # Update the DP table with the new column
         for i in range(rows):
             dp[i][j] = temp[i]
 
