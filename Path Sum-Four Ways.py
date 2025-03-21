@@ -11,14 +11,11 @@ def minimal_path_sum(matrix):
     rows = len(matrix)
     cols = len(matrix[0])
 
-    # Directions for moving up, down, left, right
     directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
-    # Initialize the distance matrix with infinity
     dist = [[float('inf')] * cols for _ in range(rows)]
     dist[0][0] = matrix[0][0]
 
-    # Priority queue: (distance, row, col)
     pq = [(matrix[0][0], 0, 0)]
 
     while pq:
