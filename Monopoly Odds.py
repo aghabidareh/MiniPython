@@ -22,7 +22,6 @@ ch_cards = ["GO", "JAIL", "C1", "E3", "H2", "R1", "next R", "next R", "next U", 
 random.shuffle(cc_cards)
 random.shuffle(ch_cards)
 
-# Initialize the position and visit counts
 position = 0
 visits = [0] * 40
 visits[0] = 1
