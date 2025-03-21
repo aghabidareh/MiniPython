@@ -38,7 +38,6 @@ def minimal_path_sum(matrix):
     return min_path_sum
 
 
-# Read the matrix from the file
 file_path = '0082_matrix.txt'
 matrix = read_matrix(file_path)
 
