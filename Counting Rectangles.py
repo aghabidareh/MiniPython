@@ -1,4 +1,4 @@
-# Finding the closest grid to 2,000,000 rectangles
+
 
 target = 2_000_000
 closest_diff = float('inf')
