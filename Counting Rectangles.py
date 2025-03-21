@@ -1,5 +1,3 @@
-
-
 target = 2_000_000
 closest_diff = float('inf')
 best_m, best_n = 0, 0
