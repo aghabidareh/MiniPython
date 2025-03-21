@@ -28,7 +28,6 @@ def minimal_path_sum(matrix):
         if i == rows - 1 and j == cols - 1:
             return current_dist
 
-        # Explore all four directions
         for di, dj in directions:
             ni, nj = i + di, j + dj
             if 0 <= ni < rows and 0 <= nj < cols:
