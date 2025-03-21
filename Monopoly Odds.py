@@ -30,12 +30,10 @@ visits[0] = 1
 # Simulate the game
 num_simulations = 1000000
 for _ in range(num_simulations):
-    # Roll two 4-sided dice
     dice1 = random.randint(1, 4)
     dice2 = random.randint(1, 4)
     total = dice1 + dice2
 
-    # Move the player
     position = (position + total) % 40
 
     if position == g2j:
