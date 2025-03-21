@@ -21,6 +21,5 @@ for m in range(1, 100):
             closest_diff = diff
             best_m, best_n = m, n
 
-# Compute the area of the best grid found
 best_area = best_m * best_n
 print(best_area)
