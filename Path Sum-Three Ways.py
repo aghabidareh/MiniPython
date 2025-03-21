@@ -18,15 +18,11 @@ def minimal_path_sum(matrix):
         # Create a temporary column to store the new DP values
         temp = [0] * rows
         for i in range(rows):
-            # Start with the value from the left
             min_sum = dp[i][j - 1]
-            # Check the cell above
             if i > 0:
                 min_sum = min(min_sum, dp[i - 1][j])
-            # Check the cell below
             if i < rows - 1:
                 min_sum = min(min_sum, dp[i + 1][j])
-            # Update the temporary column
             temp[i] = matrix[i][j] + min_sum
         for i in range(rows):
             dp[i][j] = temp[i]
