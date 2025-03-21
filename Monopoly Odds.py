@@ -90,7 +90,6 @@ probabilities = [visits[i] / num_simulations for i in range(40)]
 sorted_indices = sorted(range(40), key=lambda i: -probabilities[i])
 top_three = sorted_indices[:3]
 
-# Format the result as a six-digit string
 modal_string = ''.join(f"{i:02d}" for i in top_three)
 
 print(f"The six-digit modal string is: {modal_string}")
