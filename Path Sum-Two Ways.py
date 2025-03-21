@@ -1,4 +1,3 @@
-import sys
 
 
 def read_matrix(file_path):
