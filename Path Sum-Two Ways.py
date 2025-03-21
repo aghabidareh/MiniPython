@@ -1,5 +1,3 @@
-
-
 def read_matrix(file_path):
     with open(file_path, 'r') as file:
         matrix = [[int(num) for num in line.split(',')] for line in file]
