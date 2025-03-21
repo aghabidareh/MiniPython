@@ -24,7 +24,6 @@ def minimal_path_sum(matrix):
     while pq:
         current_dist, i, j = heapq.heappop(pq)
 
-        # If we reach the bottom-right cell, return the distance
         if i == rows - 1 and j == cols - 1:
             return current_dist
 
