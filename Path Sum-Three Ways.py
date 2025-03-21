@@ -15,7 +15,6 @@ def minimal_path_sum(matrix):
     dp = [[matrix[i][0] for j in range(cols)] for i in range(rows)]
 
     for j in range(1, cols):
-        # Create a temporary column to store the new DP values
         temp = [0] * rows
         for i in range(rows):
             min_sum = dp[i][j - 1]
