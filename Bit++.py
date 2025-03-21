@@ -1,10 +1,10 @@
 number = int(input())
-c = 0
+result = 0
 
 for _ in range(number):
     operation = input()
     if '--' in operation:
-        c -= 1
+        result -= 1
     elif '++' in operation:
-        c += 1
-print(c)
+        result += 1
+print(result)
