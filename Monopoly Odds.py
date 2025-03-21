@@ -38,7 +38,6 @@ for _ in range(num_simulations):
     # Move the player
     position = (position + total) % 40
 
-    # Handle special squares
     if position == g2j:
         position = jail
     elif position in cc_squares:
@@ -80,7 +79,6 @@ for _ in range(num_simulations):
         elif card == "back 3":
             position = (position - 3) % 40
 
-    # Increment the visit count for the current square
     visits[position] += 1
 
 probabilities = [visits[i] / num_simulations for i in range(40)]
