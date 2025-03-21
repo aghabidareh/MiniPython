@@ -86,7 +86,6 @@ for _ in range(num_simulations):
 # Calculate the probabilities
 probabilities = [visits[i] / num_simulations for i in range(40)]
 
-# Find the three most popular squares
 sorted_indices = sorted(range(40), key=lambda i: -probabilities[i])
 top_three = sorted_indices[:3]
 
