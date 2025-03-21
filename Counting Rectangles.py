@@ -4,7 +4,6 @@ target = 2_000_000
 closest_diff = float('inf')
 best_m, best_n = 0, 0
 
-# Iterate over possible values of m (up to a reasonable limit)
 for m in range(1, 100):
     rect_m = (m * (m + 1)) // 2
 
