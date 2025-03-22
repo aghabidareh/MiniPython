@@ -46,9 +46,6 @@ def read_sudoku_file(filename):
     return puzzles
 
 def get_top_left_number(grid):
-    """
-    Extracts the 3-digit number from the top-left corner of the solved grid.
-    """
     return int(''.join(map(str, grid[0][:3])))
 
 def main():
