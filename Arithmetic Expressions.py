@@ -1,10 +1,12 @@
 from itertools import permutations, combinations, product
 
+
 def evaluate_expression(expression):
     try:
         return eval(expression)
     except:
         return None
+
 
 def generate_expressions(digits):
     operations = ['+', '-', '*', '/']
@@ -24,6 +26,7 @@ def generate_expressions(digits):
                     expressions.add(int(result))
 
     return expressions
+
 
 def find_optimal_digit_set():
     max_consecutive = 0
@@ -46,9 +49,11 @@ def find_optimal_digit_set():
 
     return ''.join(map(str, sorted(optimal_set)))
 
+
 def main():
     result = find_optimal_digit_set()
     print(f"The optimal set of digits is: {result}")
+
 
 if __name__ == "__main__":
     main()
