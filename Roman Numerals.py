@@ -44,7 +44,6 @@ def count_characters_saved(file_path):
             total_saved += saved
     return total_saved
 
-# Calculate the number of characters saved
 file_path = '0089_roman.txt'
 result = count_characters_saved(file_path)
 
