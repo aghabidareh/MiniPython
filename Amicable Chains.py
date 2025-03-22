@@ -27,7 +27,6 @@ def find_longest_amicable_chain(limit):
     longest_chain_length = 0
     smallest_member = 0
 
-    # Track visited numbers to avoid reprocessing
     visited = [False] * (limit + 1)
 
     for i in range(1, limit + 1):
