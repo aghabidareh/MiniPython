@@ -41,7 +41,6 @@ def find_longest_amicable_chain(limit):
                 chain.append(current)
                 current = sum_divisors[current]
                 if current in chain:
-                    # Found a chain that loops back
                     loop_start = chain.index(current)
                     chain_length = len(chain) - loop_start
                     if chain_length > longest_chain_length:
