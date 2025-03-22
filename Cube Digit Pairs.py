@@ -11,7 +11,6 @@ def can_form_all_squares(cube1, cube2):
         # Check if a is on cube1 and b is on cube2, or vice versa
         # Also, consider 6 and 9 as interchangeable
         if not ((a in cube1 and b in cube2) or (a in cube2 and b in cube1)):
-            # Handle the case where 6 and 9 are interchangeable
             if (a == '6' or a == '9') and (b == '6' or b == '9'):
                 if not ((('6' in cube1 or '9' in cube1) and ('6' in cube2 or '9' in cube2))):
                     return False
