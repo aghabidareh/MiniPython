@@ -26,7 +26,6 @@ def sum_minimal_product_sum_numbers(max_k):
     return sum(unique_numbers)
 
 
-# Calculate the sum of all minimal product-sum numbers for 2 <= k <= 12000
 max_k = 12000
 result = sum_minimal_product_sum_numbers(max_k)
 
