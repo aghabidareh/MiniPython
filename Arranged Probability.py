@@ -1,4 +1,3 @@
-import math
 
 
 def find_minimal_blue_discs():
