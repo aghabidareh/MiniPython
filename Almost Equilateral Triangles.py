@@ -8,7 +8,6 @@ def find_almost_equilateral_triangles(limit):
     sum_perimeters = 0
 
     while True:
-        # Case 1: Third side is s - 1
         s = (2 * x - 1) // 3
         if 3 * s - 1 > limit:
             break
@@ -16,7 +15,6 @@ def find_almost_equilateral_triangles(limit):
             perimeter = 3 * s - 1
             sum_perimeters += perimeter
 
-        # Case 2: Third side is s + 1
         s = (2 * x + 1) // 3
         if 3 * s + 1 > limit:
             break
