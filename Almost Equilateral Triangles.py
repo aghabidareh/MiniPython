@@ -24,7 +24,6 @@ def find_almost_equilateral_triangles(limit):
             perimeter = 3 * s + 1
             sum_perimeters += perimeter
 
-        # Generate the next solution to Pell's equation
         x, y = 2 * x + 3 * y, 2 * y + x
 
     return sum_perimeters
