@@ -4,11 +4,6 @@ def count_integer_paths(M):
     count = 0
     for a in range(1, M + 1):
         for b in range(a, M + 1):
-            # Calculate the minimum c such that a^2 + (b + c)^2 is a perfect square
-            # We need to find c such that a^2 + (b + c)^2 = k^2 for some integer k
-            # Rearranged: (b + c)^2 = k^2 - a^2
-            # So (b + c) must be greater than or equal to b, and less than or equal to M + b
-            # We can iterate over possible k values
             min_k = math.ceil(math.sqrt(a**2 + (b + a)**2))
             max_k = math.floor(math.sqrt(a**2 + (b + M)**2))
             for k in range(min_k, max_k + 1):
