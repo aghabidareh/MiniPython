@@ -1,9 +1,4 @@
 def find_almost_equilateral_triangles(limit):
-    """
-    Find all almost equilateral triangles with integral side lengths and area,
-    and whose perimeters do not exceed the given limit.
-    """
-    # Initialize variables for Pell's equation x^2 - 3y^2 = 1
     x, y = 2, 1
     sum_perimeters = 0
 
