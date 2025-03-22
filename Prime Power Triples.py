@@ -30,7 +30,6 @@ def count_numbers_below_limit(limit):
     # Use a set to store unique sums
     unique_sums = set()
 
-    # Iterate through all combinations
     for s in squares:
         for c in cubes:
             if s + c >= limit:
