@@ -27,7 +27,6 @@ def count_numbers_below_limit(limit):
     cubes = [p ** 3 for p in primes if p ** 3 < limit]
     fourths = [p ** 4 for p in primes if p ** 4 < limit]
 
-    # Use a set to store unique sums
     unique_sums = set()
 
     for s in squares:
