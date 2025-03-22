@@ -53,7 +53,6 @@ def find_largest_square(anagram_pairs):
         for square in squares:
             letter_to_digit = {}
             if is_valid_mapping(word1, square, letter_to_digit):
-                # Now check if the second word can form a square with the same mapping
                 square2 = ''
                 for letter in word2:
                     square2 += letter_to_digit[letter]
