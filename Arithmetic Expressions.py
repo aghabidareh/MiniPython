@@ -20,10 +20,7 @@ def generate_expressions(digits):
     for nums in permutations(digits):
         # Generate all combinations of operations
         for ops in product(operations, repeat=3):
-            # Generate all possible parenthetical groupings
-            # Case 1: (a op1 b) op2 (c op3 d)
             expr1 = f"({nums[0]}{ops[0]}{nums[1]}){ops[1]}({nums[2]}{ops[2]}{nums[3]})"
-            # Case 2: ((a op1 b) op2 c) op3 d
             expr2 = f"(({nums[0]}{ops[0]}{nums[1]}){ops[1]}{nums[2]}){ops[2]}{nums[3]}"
             expr3 = f"({nums[0]}{ops[0]}({nums[1]}{ops[1]}{nums[2]})){ops[2]}{nums[3]}"
             expr4 = f"{nums[0]}{ops[0]}({nums[1]}{ops[1]}({nums[2]}{ops[2]}{nums[3]}))"
