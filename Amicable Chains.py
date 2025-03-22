@@ -16,10 +16,6 @@ def sum_of_proper_divisors(n):
     return total
 
 def find_longest_amicable_chain(limit):
-    """
-    Find the smallest member of the longest amicable chain with no element exceeding the limit.
-    """
-    # Precompute the sum of proper divisors for all numbers up to the limit
     sum_divisors = [0] * (limit + 1)
     for i in range(1, limit + 1):
         sum_divisors[i] = sum_of_proper_divisors(i)
