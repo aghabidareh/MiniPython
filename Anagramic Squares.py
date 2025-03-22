@@ -70,7 +70,6 @@ words = read_words(file_path)
 # Find all anagram pairs
 anagram_pairs = find_anagrams(words)
 
-# Find the largest square number formed by any member of such a pair
 result = find_largest_square(anagram_pairs)
 
 print(f"The largest square number formed by any member of a square anagram word pair is: {result}")
