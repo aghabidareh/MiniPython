@@ -63,7 +63,6 @@ def find_largest_square(anagram_pairs):
                         largest_square = square_num
     return largest_square
 
-# Read the words from the file
 file_path = '0098_words.txt'
 words = read_words(file_path)
 
