@@ -25,9 +25,7 @@ def generate_expressions(digits):
             expr1 = f"({nums[0]}{ops[0]}{nums[1]}){ops[1]}({nums[2]}{ops[2]}{nums[3]})"
             # Case 2: ((a op1 b) op2 c) op3 d
             expr2 = f"(({nums[0]}{ops[0]}{nums[1]}){ops[1]}{nums[2]}){ops[2]}{nums[3]}"
-            # Case 3: (a op1 (b op2 c)) op3 d
             expr3 = f"({nums[0]}{ops[0]}({nums[1]}{ops[1]}{nums[2]})){ops[2]}{nums[3]}"
-            # Case 4: a op1 (b op2 (c op3 d))
             expr4 = f"{nums[0]}{ops[0]}({nums[1]}{ops[1]}({nums[2]}{ops[2]}{nums[3]}))"
             expr5 = f"{nums[0]}{ops[0]}(({nums[1]}{ops[1]}{nums[2]}){ops[2]}{nums[3]})"
 
