@@ -12,12 +12,6 @@ def count_right_triangles(limit):
     # Right angle at P
     for x1 in range(1, limit + 1):
         for y1 in range(1, limit + 1):
-            # Q must lie on the line perpendicular to OP at P
-            # The slope of OP is y1/x1, so the slope of PQ must be -x1/y1
-            # Q = (x2, y2) must satisfy (y2 - y1)/(x2 - x1) = -x1/y1
-            # Simplify to: x1(x2 - x1) + y1(y2 - y1) = 0
-            # Rearrange: x1 x2 + y1 y2 = x1^2 + y1^2
-            # To find integer solutions, iterate over x2 and solve for y2
             for x2 in range(0, limit + 1):
                 numerator = x1 * x1 + y1 * y1 - x1 * x2
                 if numerator % y1 == 0:
