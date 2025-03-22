@@ -18,7 +18,6 @@ def count_numbers_arriving_at_89(limit):
             return True
         if n in memo:
             return memo[n]
-        # Recursively check the next number in the chain
         result = arrives_at_89(sum_of_squares(n))
         memo[n] = result
         return result
