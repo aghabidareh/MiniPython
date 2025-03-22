@@ -1,4 +1,4 @@
-import itertools
+
 import math
 
 def read_words(file_path):
@@ -14,7 +14,6 @@ def find_anagrams(words):
             anagram_groups[key].append(word)
         else:
             anagram_groups[key] = [word]
-    # Filter out groups with only one word
     anagram_pairs = [group for group in anagram_groups.values() if len(group) > 1]
     return anagram_pairs
 
