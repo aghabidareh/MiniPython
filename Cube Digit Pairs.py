@@ -2,7 +2,6 @@ from itertools import combinations
 
 
 def can_form_all_squares(cube1, cube2):
-    # Define all required square numbers
     squares = ['01', '04', '09', '16', '25', '36', '49', '64', '81']
 
     for square in squares:
