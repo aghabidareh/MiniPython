@@ -1,7 +1,4 @@
 def sum_of_proper_divisors(n):
-    """
-    Calculate the sum of proper divisors of a number n.
-    """
     if n < 2:
         return 0
     total = 1
