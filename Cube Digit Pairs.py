@@ -30,18 +30,15 @@ def generate_cubes():
 def count_valid_arrangements():
     cubes = generate_cubes()
     count = 0
-    # Iterate through all pairs of cubes
     for i in range(len(cubes)):
         for j in range(i, len(cubes)):
             cube1 = cubes[i]
             cube2 = cubes[j]
-            # Check if the pair can form all squares
             if can_form_all_squares(cube1, cube2):
                 count += 1
     return count
 
 
-# Count the number of valid arrangements
 result = count_valid_arrangements()
 
 print(f"The number of distinct arrangements is: {result}")
