@@ -25,7 +25,6 @@ def count_right_triangles(limit):
                     if 0 <= y2 <= limit:
                         count += 1
 
-    # Right angle at Q
     for x2 in range(1, limit + 1):
         for y2 in range(1, limit + 1):
             for x1 in range(0, limit + 1):
