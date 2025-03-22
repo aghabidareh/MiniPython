@@ -1,18 +1,12 @@
 from itertools import permutations, combinations, product
 
 def evaluate_expression(expression):
-    """
-    Evaluate a mathematical expression safely.
-    """
     try:
         return eval(expression)
     except:
         return None
 
 def generate_expressions(digits):
-    """
-    Generate all valid expressions using the digits and the four arithmetic operations.
-    """
     operations = ['+', '-', '*', '/']
     expressions = set()
 
