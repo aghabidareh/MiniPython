@@ -41,9 +41,6 @@ def generate_expressions(digits):
     return expressions
 
 def find_optimal_digit_set():
-    """
-    Find the set of four digits that produces the longest sequence of consecutive integers.
-    """
     max_consecutive = 0
     optimal_set = None
 
