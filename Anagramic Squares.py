@@ -1,10 +1,11 @@
-
 import math
+
 
 def read_words(file_path):
     with open(file_path, 'r') as file:
         words = file.read().replace('"', '').split(',')
     return words
+
 
 def find_anagrams(words):
     anagram_groups = {}
@@ -16,6 +17,7 @@ def find_anagrams(words):
             anagram_groups[key] = [word]
     anagram_pairs = [group for group in anagram_groups.values() if len(group) > 1]
     return anagram_pairs
+
 
 def generate_squares(length):
     min_num = 10 ** (length - 1)
@@ -30,6 +32,7 @@ def generate_squares(length):
         n += 1
     return squares
 
+
 def is_valid_mapping(word, square, letter_to_digit):
     if len(word) != len(square):
         return False
@@ -42,6 +45,7 @@ def is_valid_mapping(word, square, letter_to_digit):
                 return False
             letter_to_digit[word[i]] = square[i]
     return True
+
 
 def find_largest_square(anagram_pairs):
     largest_square = 0
@@ -60,6 +64,7 @@ def find_largest_square(anagram_pairs):
                     if square_num > largest_square:
                         largest_square = square_num
     return largest_square
+
 
 file_path = '0098_words.txt'
 words = read_words(file_path)
