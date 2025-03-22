@@ -1,7 +1,4 @@
 def solve_sudoku(grid):
-    """
-    Solves a Sudoku grid using backtracking.
-    """
     def is_valid(row, col, num):
         # Check if the number is valid in the current row, column, and 3x3 box
         for i in range(9):
