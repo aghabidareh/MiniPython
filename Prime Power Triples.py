@@ -45,7 +45,6 @@ def count_numbers_below_limit(limit):
     return len(unique_sums)
 
 
-# Calculate the number of numbers below fifty million that can be expressed as the sum of a prime square, prime cube, and prime fourth power
 limit = 50000000
 result = count_numbers_below_limit(limit)
 
