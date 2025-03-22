@@ -1,8 +1,4 @@
 def count_right_triangles(limit):
-    """
-    Count the number of right triangles formed by points P(x1, y1) and Q(x2, y2)
-    with 0 <= x1, y1, x2, y2 <= limit, and the right angle at O, P, or Q.
-    """
     count = 0
 
     count += limit * limit
