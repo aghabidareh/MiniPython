@@ -1,4 +1,4 @@
-# Calculate 2^7830457 mod 10^10
+
 exponent = 7830457
 modulus = 10**10
 
