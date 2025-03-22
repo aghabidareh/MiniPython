@@ -14,15 +14,12 @@ def sieve_of_eratosthenes(limit):
 
 
 def count_numbers_below_limit(limit):
-    # Determine the maximum prime needed for squares, cubes, and fourth powers
     max_prime_square = int(math.sqrt(limit)) + 1
     max_prime_cube = int(limit ** (1 / 3)) + 1
     max_prime_fourth = int(limit ** (1 / 4)) + 1
 
-    # Generate all primes up to the maximum required
     primes = sieve_of_eratosthenes(max(max_prime_square, max_prime_cube, max_prime_fourth))
 
-    # Generate squares, cubes, and fourth powers
     squares = [p ** 2 for p in primes if p ** 2 < limit]
     cubes = [p ** 3 for p in primes if p ** 3 < limit]
     fourths = [p ** 4 for p in primes if p ** 4 < limit]
