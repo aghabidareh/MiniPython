@@ -1,4 +1,3 @@
-
 def find_minimal_product_sum_numbers(max_k):
     minimal_numbers = {}
 
