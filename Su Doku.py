@@ -1,6 +1,5 @@
 def solve_sudoku(grid):
     def is_valid(row, col, num):
-        # Check if the number is valid in the current row, column, and 3x3 box
         for i in range(9):
             if grid[row][i] == num or grid[i][col] == num:
                 return False
