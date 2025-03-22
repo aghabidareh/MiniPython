@@ -31,9 +31,6 @@ def solve_sudoku(grid):
     return grid
 
 def read_sudoku_file(filename):
-    """
-    Reads the Sudoku puzzles from the file and returns them as a list of grids.
-    """
     puzzles = []
     with open(filename, 'r') as file:
         lines = file.readlines()
