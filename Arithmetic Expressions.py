@@ -47,12 +47,10 @@ def find_optimal_digit_set():
     max_consecutive = 0
     optimal_set = None
 
-    # Iterate over all combinations of four distinct digits
     for digits in combinations(range(1, 10), 4):
         expressions = generate_expressions(digits)
         sorted_results = sorted(expressions)
 
-        # Find the longest sequence of consecutive integers starting from 1
         consecutive = 0
         for i in range(1, len(sorted_results) + 1):
             if i in sorted_results:
