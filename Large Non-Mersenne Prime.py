@@ -1,6 +1,5 @@
-
 exponent = 7830457
-modulus = 10**10
+modulus = 10 ** 10
 
 power_of_two = pow(2, exponent, modulus)
 
