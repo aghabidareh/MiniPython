@@ -12,7 +12,6 @@ def find_max_line(file_path):
                 max_line = line_number
     return max_line
 
-# Find the line number with the greatest numerical value
 file_path = '0099_base_exp.txt'
 result = find_max_line(file_path)
 
