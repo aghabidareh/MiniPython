@@ -1,6 +1,7 @@
 def sum_of_squares(n):
     return sum(int(digit) ** 2 for digit in str(n))
 
+
 def count_numbers_arriving_at_89(limit):
     memo = {}
 
@@ -21,10 +22,12 @@ def count_numbers_arriving_at_89(limit):
             count += 1
     return count
 
+
 def main():
-    limit = 10**7
+    limit = 10 ** 7
     result = count_numbers_arriving_at_89(limit)
     print(f"The number of starting numbers below {limit} that arrive at 89 is: {result}")
+
 
 if __name__ == "__main__":
     main()
