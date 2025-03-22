@@ -5,10 +5,6 @@ def sum_of_squares(n):
     return sum(int(digit) ** 2 for digit in str(n))
 
 def count_numbers_arriving_at_89(limit):
-    """
-    Count how many numbers below the limit arrive at 89 when repeatedly summing the squares of their digits.
-    """
-    # Memoization to store whether a number arrives at 89
     memo = {}
 
     def arrives_at_89(n):
