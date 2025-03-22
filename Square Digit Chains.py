@@ -1,7 +1,4 @@
 def sum_of_squares(n):
-    """
-    Calculate the sum of the squares of the digits of n.
-    """
     return sum(int(digit) ** 2 for digit in str(n))
 
 def count_numbers_arriving_at_89(limit):
