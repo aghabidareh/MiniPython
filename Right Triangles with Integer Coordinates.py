@@ -24,10 +24,12 @@ def count_right_triangles(limit):
 
     return count
 
+
 def main():
     limit = 50
     result = count_right_triangles(limit)
     print(f"The number of right triangles is: {result}")
+
 
 if __name__ == "__main__":
     main()
