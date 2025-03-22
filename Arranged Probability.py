@@ -2,7 +2,6 @@ import math
 
 
 def find_minimal_blue_discs():
-    # Initial solution (b, n) = (15, 21)
     b = 15
     n = 21
 
