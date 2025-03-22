@@ -5,9 +5,7 @@ def count_right_triangles(limit):
     """
     count = 0
 
-    # Right angle at O
-    # P lies on the x-axis, Q lies on the y-axis
-    count += limit * limit  # P can be any (x, 0), Q can be any (0, y)
+    count += limit * limit
 
     # Right angle at P
     for x1 in range(1, limit + 1):
