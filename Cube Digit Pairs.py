@@ -22,7 +22,6 @@ def can_form_all_squares(cube1, cube2):
 
 def generate_cubes():
     digits = set(range(10))
-    # Generate all combinations of 6 digits for the first cube
     cubes = list(combinations(digits, 6))
     return cubes
 
