@@ -18,7 +18,6 @@ def generate_expressions(digits):
             expr4 = f"{nums[0]}{ops[0]}({nums[1]}{ops[1]}({nums[2]}{ops[2]}{nums[3]}))"
             expr5 = f"{nums[0]}{ops[0]}(({nums[1]}{ops[1]}{nums[2]}){ops[2]}{nums[3]})"
 
-            # Evaluate all expressions and add valid results to the set
             for expr in [expr1, expr2, expr3, expr4, expr5]:
                 result = evaluate_expression(expr)
                 if result is not None and result == int(result) and result > 0:
