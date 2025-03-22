@@ -16,9 +16,7 @@ def generate_expressions(digits):
     operations = ['+', '-', '*', '/']
     expressions = set()
 
-    # Generate all permutations of the digits
     for nums in permutations(digits):
-        # Generate all combinations of operations
         for ops in product(operations, repeat=3):
             expr1 = f"({nums[0]}{ops[0]}{nums[1]}){ops[1]}({nums[2]}{ops[2]}{nums[3]})"
             expr2 = f"(({nums[0]}{ops[0]}{nums[1]}){ops[1]}{nums[2]}){ops[2]}{nums[3]}"
