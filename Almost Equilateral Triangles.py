@@ -21,10 +21,12 @@ def find_almost_equilateral_triangles(limit):
 
     return sum_perimeters
 
+
 def main():
-    limit = 10**9
+    limit = 10 ** 9
     result = find_almost_equilateral_triangles(limit)
     print(f"The sum of the perimeters is: {result}")
+
 
 if __name__ == "__main__":
     main()
