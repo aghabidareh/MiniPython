@@ -5,7 +5,6 @@ def can_form_all_squares(cube1, cube2):
     # Define all required square numbers
     squares = ['01', '04', '09', '16', '25', '36', '49', '64', '81']
 
-    # Check if all squares can be formed
     for square in squares:
         a, b = square[0], square[1]
         if not ((a in cube1 and b in cube2) or (a in cube2 and b in cube1)):
