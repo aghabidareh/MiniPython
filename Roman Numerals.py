@@ -11,6 +11,7 @@ def roman_to_int(s):
         prev_value = value
     return total
 
+
 def int_to_roman(num):
     val = [
         1000, 900, 500, 400,
@@ -33,6 +34,7 @@ def int_to_roman(num):
         i += 1
     return roman_num
 
+
 def count_characters_saved(file_path):
     total_saved = 0
     with open(file_path, 'r') as file:
@@ -43,6 +45,7 @@ def count_characters_saved(file_path):
             saved = len(original) - len(minimal)
             total_saved += saved
     return total_saved
+
 
 file_path = '0089_roman.txt'
 result = count_characters_saved(file_path)
