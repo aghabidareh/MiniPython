@@ -60,7 +60,6 @@ def find_optimal_digit_set():
             else:
                 break
 
-        # Update the optimal set if this combination produces a longer sequence
         if consecutive > max_consecutive:
             max_consecutive = consecutive
             optimal_set = digits
