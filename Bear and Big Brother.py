@@ -1,8 +1,5 @@
-limak, bob = input().split()
+limak, bob = map(int, input().split())
 year = 0
-
-limak = int(limak)
-bob = int(bob)
 
 while True:
 
