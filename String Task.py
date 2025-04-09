@@ -8,6 +8,7 @@ def process_string(input_string):
 
     return ''.join(result)
 
+
 input_string = input().strip()
 output_string = process_string(input_string)
 print(output_string)
