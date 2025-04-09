@@ -5,3 +5,5 @@ def minimum_steps_to_friend(step):
         return full_steps + 1
     return full_steps
 
+step = int(input().strip())
+print(minimum_steps_to_friend(step))
