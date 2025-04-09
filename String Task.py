@@ -7,3 +7,6 @@ def process_string(string):
             result.append('.' + char)
 
     return ''.join(result)
+
+string = input().strip().lower()
+print(process_string(string))
